@@ -3,10 +3,12 @@ import { Route, Switch } from "react-router-dom"; //Route is used to define diff
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
 import FavouritesPage from "./pages/Favourites";
+import MainNavigation from "./components/layout/MainNavigation";
 //EXACT only if full path mathes
 function App() {
   return (
     <div>
+      <MainNavigation />
       <Switch>
         <Route path="/" exact>
           <AllMeetupsPage />
